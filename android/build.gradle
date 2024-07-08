@@ -8,7 +8,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.6.0'
+        classpath 'com.android.tools.build:gradle:8.1.4'
     }
 }
 
@@ -23,10 +23,11 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 35
+    namespace "com.dsi.facebook_audience_network"
 
     defaultConfig {
-        minSdkVersion 16
+        minSdkVersion 21
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     lintOptions {
@@ -36,7 +37,7 @@ android {
 
 dependencies {
     implementation 'androidx.lifecycle:lifecycle-runtime:2.2.0'
-    implementation 'com.facebook.android:audience-network-sdk:6.+'
+    implementation 'com.facebook.android:audience-network-sdk:6.17.0'
     implementation 'androidx.annotation:annotation:1.1.0'
     compileOnly files('tempLibs/flutter.jar')
 }
