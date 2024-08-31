@@ -1,4 +1,4 @@
-group 'com.dsi.facebook_audience_network'
+//group 'com.dsi.facebook_audience_network'
 version '1.0-SNAPSHOT'
 
 buildscript {
@@ -28,6 +28,7 @@ android {
 
     defaultConfig {
         minSdkVersion 21
+        targetSdkVersion 35
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     lintOptions {
