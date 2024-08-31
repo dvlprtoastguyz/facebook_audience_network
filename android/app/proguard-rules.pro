@@ -1,1 +1,1 @@
--keep class com.facebook.infer.annotation.Nullsafe { *; }
+-dontwarn com.facebook.infer.annotation.Nullsafe
