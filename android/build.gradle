@@ -23,12 +23,12 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 35
+    compileSdkVersion 34
     namespace "com.dsi.facebook_audience_network"
 
     defaultConfig {
         minSdkVersion 21
-        targetSdkVersion 35
+        targetSdkVersion 34
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     lintOptions {
@@ -40,5 +40,5 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-runtime:2.7.0'
     implementation 'com.facebook.android:audience-network-sdk:6.17.0'
     implementation 'androidx.annotation:annotation:1.7.1'
-    compileOnly files('tempLibs/flutter.jar')
+//    compileOnly files('tempLibs/flutter.jar')
 }
